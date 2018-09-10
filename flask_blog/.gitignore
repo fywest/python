@@ -1,8 +1,0 @@
-.idea
-venv/
-*.pyc
-__pycache__
-dist/
-node_modules/
-*.swp
-npm-debug.log
