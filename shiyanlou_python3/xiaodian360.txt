@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<link rel="pingback" href="http://xiaodian360.com/xmlrpc.php">
+
+	<title>My blog-Good good study day day up &#8211; Just another WordPress site</title>
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="My blog-Good good study day day up &raquo; Feed" href="http://xiaodian360.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="My blog-Good good study day day up &raquo; Comments Feed" href="http://xiaodian360.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/xiaodian360.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fl-builder-layout-156-css'  href='http://xiaodian360.com/wp-content/uploads/bb-plugin/cache/156-layout.css?ver=411793990a010500dbaad5ddc8ed8900' type='text/css' media='all' />
+<link rel='stylesheet' id='stout-css'  href='http://xiaodian360.com/wp-content/themes/stout/style.css?ver=1.1.0' type='text/css' media='all' />
+<style id='stout-inline-css' type='text/css'>
+.hero{background-image:url(http://xiaodian360.com/wp-content/uploads/2018/08/qtq50-Ou6l5L.jpeg);}
+.site-title a,.site-title a:visited{color:#e3ad31;}.site-title a:hover,.site-title a:visited:hover{color:rgba(227, 173, 49, 0.8);}
+.site-description{color:#686868;}
+.hero,.hero .widget h1,.hero .widget h2,.hero .widget h3,.hero .widget h4,.hero .widget h5,.hero .widget h6,.hero .widget p,.hero .widget blockquote,.hero .widget cite,.hero .widget table,.hero .widget ul,.hero .widget ol,.hero .widget li,.hero .widget dd,.hero .widget dt,.hero .widget address,.hero .widget code,.hero .widget pre,.hero .widget .widget-title,.hero .page-header h1{color:#ffffff;}
+.main-navigation ul li a,.main-navigation ul li a:visited,.main-navigation ul li a:hover,.main-navigation ul li a:visited:hover{color:#686868;}.main-navigation .sub-menu .menu-item-has-children > a::after{border-right-color:#686868;border-left-color:#686868;}.menu-toggle div{background-color:#686868;}.main-navigation ul li a:hover{color:rgba(104, 104, 104, 0.8);}
+h1,h2,h3,h4,h5,h6,label,legend,table th,dl dt,.entry-title,.entry-title a,.entry-title a:visited,.widget-title{color:#353535;}.entry-title a:hover,.entry-title a:visited:hover,.entry-title a:focus,.entry-title a:visited:focus,.entry-title a:active,.entry-title a:visited:active{color:rgba(53, 53, 53, 0.8);}
+body,input,select,textarea,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="number"]:focus,input[type="tel"]:focus,input[type="range"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="color"]:focus,textarea:focus,.navigation.pagination .paging-nav-text{color:#252525;}.fl-callout-text,.fl-rich-text{color:#252525;}hr{background-color:rgba(37, 37, 37, 0.1);border-color:rgba(37, 37, 37, 0.1);}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea,.select2-container .select2-choice{color:rgba(37, 37, 37, 0.5);border-color:rgba(37, 37, 37, 0.1);}select,fieldset,blockquote,pre,code,abbr,acronym,.hentry table th,.hentry table td{border-color:rgba(37, 37, 37, 0.1);}.hentry table tr:hover td{background-color:rgba(37, 37, 37, 0.05);}
+blockquote,.entry-meta,.entry-footer,.comment-meta .says,.logged-in-as{color:#686868;}
+.site-footer .widget-title,.site-footer h1,.site-footer h2,.site-footer h3,.site-footer h4,.site-footer h5,.site-footer h6{color:#ffffff;}
+.site-footer .widget,.site-footer .widget form label{color:#ffffff;}
+.footer-menu ul li a,.footer-menu ul li a:visited{color:#252525;}.site-info-wrapper .social-menu a{background-color:#252525;}.footer-menu ul li a,.footer-menu ul li a:visited{color:#252525;}.site-info-wrapper .social-menu a,.site-info-wrapper .social-menu a:visited{background-color:#252525;}.footer-menu ul li a:hover,.footer-menu ul li a:visited:hover{color:rgba(37, 37, 37, 0.8);}.footer-menu ul li a:hover,.footer-menu ul li a:visited:hover{color:rgba(37, 37, 37, 0.8);}
+.site-info-wrapper .site-info-text{color:#686868;}
+a,a:visited,.entry-title a:hover,.entry-title a:visited:hover{color:#e3ad31;}.navigation.pagination .nav-links .page-numbers.current,.social-menu a:hover{background-color:#e3ad31;}a:hover,a:visited:hover,a:focus,a:visited:focus,a:active,a:visited:active{color:rgba(227, 173, 49, 0.8);}.comment-list li.bypostauthor{border-color:rgba(227, 173, 49, 0.2);}
+button,a.button,a.button:visited,input[type="button"],input[type="reset"],input[type="submit"],.site-info-wrapper .social-menu a:hover{background-color:#e3ad31;border-color:#e3ad31;}a.fl-button,a.fl-button:visited,.content-area .fl-builder-content a.fl-button,.content-area .fl-builder-content a.fl-button:visited{background-color:#e3ad31;border-color:#e3ad31;}button:hover,button:active,button:focus,a.button:hover,a.button:active,a.button:focus,a.button:visited:hover,a.button:visited:active,a.button:visited:focus,input[type="button"]:hover,input[type="button"]:active,input[type="button"]:focus,input[type="reset"]:hover,input[type="reset"]:active,input[type="reset"]:focus,input[type="submit"]:hover,input[type="submit"]:active,input[type="submit"]:focus{background-color:rgba(227, 173, 49, 0.8);border-color:rgba(227, 173, 49, 0.8);}a.fl-button:hover,a.fl-button:active,a.fl-button:focus,a.fl-button:visited:hover,a.fl-button:visited:active,a.fl-button:visited:focus,.content-area .fl-builder-content a.fl-button:hover,.content-area .fl-builder-content a.fl-button:active,.content-area .fl-builder-content a.fl-button:focus,.content-area .fl-builder-content a.fl-button:visited:hover,.content-area .fl-builder-content a.fl-button:visited:active,.content-area .fl-builder-content a.fl-button:visited:focus{background-color:rgba(227, 173, 49, 0.8);border-color:rgba(227, 173, 49, 0.8);}
+button,button:hover,button:active,button:focus,a.button,a.button:hover,a.button:active,a.button:focus,a.button:visited,a.button:visited:hover,a.button:visited:active,a.button:visited:focus,input[type="button"],input[type="button"]:hover,input[type="button"]:active,input[type="button"]:focus,input[type="reset"],input[type="reset"]:hover,input[type="reset"]:active,input[type="reset"]:focus,input[type="submit"],input[type="submit"]:hover,input[type="submit"]:active,input[type="submit"]:focus{color:#ffffff;}a.fl-button
+				a.fl-button:hover,a.fl-button:active,a.fl-button:focus,a.fl-button:visited,a.fl-button:visited:hover,a.fl-button:visited:active,a.fl-button:visited:focus,.content-area .fl-builder-content a.fl-button,.content-area .fl-builder-content a.fl-button *,.content-area .fl-builder-content a.fl-button:visited,.content-area .fl-builder-content a.fl-button:visited *{color:#ffffff;}
+body{background-color:#ffffff;}.navigation.pagination .nav-links .page-numbers.current{color:#ffffff;}
+.hero{background-color:#252525;}.hero{-webkit-box-shadow:inset 0 0 0 9999em;-moz-box-shadow:inset 0 0 0 9999em;box-shadow:inset 0 0 0 9999em;color:rgba(37, 37, 37, 0.50);}
+.main-navigation-container,.main-navigation.open,.main-navigation ul ul,.main-navigation .sub-menu{background-color:#ffffff;}.site-header-wrapper{background-color:#ffffff;}
+.site-footer{background-color:#4e4e4e;}
+.site-info-wrapper{background-color:#ffffff;}.site-info-wrapper .social-menu a,.site-info-wrapper .social-menu a:visited,.site-info-wrapper .social-menu a:hover,.site-info-wrapper .social-menu a:visited:hover{color:#ffffff;}
+</style>
+<link rel='stylesheet' id='wpcw-css'  href='http://xiaodian360.com/wp-content/plugins/contact-widgets/assets/css/style.min.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=1.9.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='stout-fonts-css'  href='//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700%7CLato%3A300%2C400%2C700&#038;subset=latin&#038;ver=4.9.8' type='text/css' media='all' />
+<style id='stout-fonts-inline-css' type='text/css'>
+.site-title{font-family:"Oswald", sans-serif;}
+.main-navigation ul li a,.main-navigation ul li a:visited,button,a.button,a.fl-button,input[type="button"],input[type="reset"],input[type="submit"]{font-family:"Oswald", sans-serif;}
+h1,h2,h3,h4,h5,h6,label,legend,table th,dl dt,.entry-title,.widget-title{font-family:"Oswald", sans-serif;}
+body,p,ol li,ul li,dl dd,.fl-callout-text{font-family:"Lato", sans-serif;}
+blockquote,.entry-meta,.entry-footer,.comment-list li .comment-meta .says,.comment-list li .comment-metadata,.comment-reply-link,#respond .logged-in-as{font-family:"Lato", sans-serif;}
+</style>
+<script type='text/javascript' src='http://xiaodian360.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://xiaodian360.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://xiaodian360.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://xiaodian360.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://xiaodian360.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel="canonical" href="http://xiaodian360.com/" />
+<link rel='shortlink' href='http://xiaodian360.com/' />
+<link rel="alternate" type="application/json+oembed" href="http://xiaodian360.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fxiaodian360.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://xiaodian360.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fxiaodian360.com%2F&#038;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type='text/css'>
+.site-title a,.site-title a:visited{color:e3ad31;}
+</style>
+</head>
+
+<body class="home page-template-default page page-id-156 fl-builder custom-header-image layout-one-column-wide">
+
+	
+	<div id="page" class="hfeed site">
+
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		
+		<header id="masthead" class="site-header" role="banner">
+
+			
+			<div class="site-header-wrapper">
+
+				
+<div class="site-title-wrapper">
+
+	
+	<h1 class="site-title"><a href="http://xiaodian360.com/" rel="home">My blog-Good good study day day up</a></h1>
+	<div class="site-description">Just another WordPress site</div>
+</div><!-- .site-title-wrapper -->
+
+<div class="main-navigation-container">
+
+	
+<div class="menu-toggle" id="menu-toggle">
+	<div></div>
+	<div></div>
+	<div></div>
+</div><!-- #menu-toggle -->
+
+	<nav id="site-navigation" class="main-navigation">
+
+		<div class="menu-primary-menu-container"><ul id="menu-primary-menu" class="menu"><li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-156 current_page_item menu-item-170"><a href="http://xiaodian360.com/">Home</a></li>
+<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="http://xiaodian360.com/about/">About Us</a></li>
+<li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="http://xiaodian360.com/services/">Services</a></li>
+<li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="http://xiaodian360.com/blog/">Blog</a></li>
+<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="http://xiaodian360.com/contact/">Contact Us</a></li>
+<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237"><a href="http://xiaodian360.com/faq/">FAQ</a></li>
+<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="http://xiaodian360.com/portfolio/">Portfolio</a></li>
+<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="http://xiaodian360.com/gallery/">Gallery</a></li>
+</ul></div>
+	</nav><!-- #site-navigation -->
+
+	
+</div>
+
+			</div><!-- .site-header-wrapper -->
+
+			
+		</header><!-- #masthead -->
+
+		
+<div class="hero">
+
+	
+	<div class="hero-inner">
+
+		<aside id="primer-hero-text-2" class="widget widget_text primer-widgets primer-hero-text-widget">		<div class="textwidget primer-widgets primer-hero-text-widget">
+
+			
+				<h2 class="widget-title">Nina start 1st grade today</h2>
+			
+			
+				<p>Grab your visitors' attention front and center on your homepage, then give them an action to take.</p>
+
+			
+			
+				<p><a href="/contact/" class="button">Get Started</a></p>
+
+			
+		</div>
+		</aside>
+	</div>
+
+</div>
+
+		<div id="content" class="site-content">
+
+<div id="primary" class="content-area">
+
+	<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-156" class="post-156 page type-page status-publish hentry">
+
+	
+		
+	
+	
+<div class="page-content">
+
+	<div class="fl-builder-content fl-builder-content-156 fl-builder-content-primary" data-post-id="156"><div id="expect" class="fl-row fl-row-full-width fl-row-bg-none fl-node-57571353380c6" data-node="57571353380c6">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5757135338174" data-node="5757135338174">
+			<div class="fl-col fl-node-57571353382cf fl-col-small" data-node="57571353382cf" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-callout fl-node-5758c173f3e5a" data-node="5758c173f3e5a" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-callout fl-callout-left fl-callout-has-photo fl-callout-photo-above-title">
+		<div class="fl-callout-content">
+		<div class="fl-callout-photo"><div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="#" target="_self" itemprop="url">
+				<img class="fl-photo-img" src="http://xiaodian360.com/wp-content/uploads/2018/08/IMG_6078-e1533827093249.jpg" alt="" itemprop="image"  />
+				</a>
+		    
+			</div>
+	</div></div><h3 class="fl-callout-title"><span><a href="#" target="_self" class="fl-callout-title-link">Product / Service #1</a></span></h3>		<div class="fl-callout-text-wrap">
+			<div class="fl-callout-text"><p>Whatever your company is most known for should go right here, whether that's bratwurst or baseball caps or vampire bat removal.</p>
+</div><a href="#" target="_self" class="fl-callout-cta-link">Learn More</a>		</div> 
+	</div> 
+	</div>	</div>
+</div>	</div>
+</div>			<div class="fl-col fl-node-5757135338222 fl-col-small" data-node="5757135338222" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-callout fl-node-5758c0ed91818" data-node="5758c0ed91818" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-callout fl-callout-left fl-callout-has-photo fl-callout-photo-above-title">
+		<div class="fl-callout-content">
+		<div class="fl-callout-photo"><div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="#" target="_self" itemprop="url">
+				<img class="fl-photo-img" src="http://xiaodian360.com/wp-content/uploads/2017/04/home-2.jpg" alt="" itemprop="image"  />
+				</a>
+		    
+			</div>
+	</div></div><h3 class="fl-callout-title"><span><a href="#" target="_self" class="fl-callout-title-link">Product / Service #2</a></span></h3>		<div class="fl-callout-text-wrap">
+			<div class="fl-callout-text"><p>What's another popular item you have for sale or trade? Talk about it here in glowing, memorable terms so site visitors have to have it.</p>
+</div><a href="#" target="_self" class="fl-callout-cta-link">Learn More</a>		</div> 
+	</div> 
+	</div>	</div>
+</div>	</div>
+</div>			<div class="fl-col fl-node-575713533837c fl-col-small" data-node="575713533837c" style="width: 33.33%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-callout fl-node-5758c16fcc295" data-node="5758c16fcc295" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-callout fl-callout-left fl-callout-has-photo fl-callout-photo-above-title">
+		<div class="fl-callout-content">
+		<div class="fl-callout-photo"><div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="#" target="_self" itemprop="url">
+				<img class="fl-photo-img" src="http://xiaodian360.com/wp-content/uploads/2017/04/home-3.jpg" alt="" itemprop="image"  />
+				</a>
+		    
+			</div>
+	</div></div><h3 class="fl-callout-title"><span><a href="#" target="_self" class="fl-callout-title-link">Product / Service #3</a></span></h3>		<div class="fl-callout-text-wrap">
+			<div class="fl-callout-text"><p>Don't think of this product or service as your third favorite, think of it as the bronze medalist in an Olympic medals sweep of great products/services.</p>
+</div><a href="#" target="_self" class="fl-callout-cta-link">Learn More</a>		</div> 
+	</div> 
+	</div>	</div>
+</div>	</div>
+</div>	</div>
+		</div>
+	</div>
+</div><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5758c7ef9b62c" data-node="5758c7ef9b62c">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5758c7efa6174" data-node="5758c7efa6174">
+			<div class="fl-col fl-node-5758c7efa634d fl-col-small" data-node="5758c7efa634d" style="width: 50%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5758c7f897c9c" data-node="5758c7f897c9c" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Your Main Message</h3>
+<p>Use this space to tell people what your company does and why and how it does it. What're you known for? Who likes you? What's your number one competitive advantage?</p>
+<p>Include all the things that make your business unique and better than the competition. Do you have a patented 13-step process for taxidermy that results in the most lifelike stuffed owls? You gotta mention that.</p>
+<p>Other good things to weave into this copy include: awards won, distinctions given, number of products sold, company philosophy (just keep it short), interesting company history bits, and anything that makes a reader think you'd be awesome to do business with.</p>
+</div>	</div>
+</div>	</div>
+</div>			<div class="fl-col fl-node-5758c7efa63fa fl-col-small" data-node="5758c7efa63fa" style="width: 50%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5758c868f0fae" data-node="5758c868f0fae" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img class="fl-photo-img wp-image-188 size-full" src="http://xiaodian360.com/wp-content/uploads/2017/04/home-4.jpg" alt="home-4" itemprop="image" srcset="http://xiaodian360.com/wp-content/uploads/2017/04/home-4.jpg 1440w, http://xiaodian360.com/wp-content/uploads/2017/04/home-4-225x300.jpg 225w, http://xiaodian360.com/wp-content/uploads/2017/04/home-4-768x1024.jpg 768w" sizes="(max-width: 1440px) 100vw, 1440px" />
+		    
+			</div>
+	</div>	</div>
+</div>	</div>
+</div>	</div>
+		</div>
+	</div>
+</div><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-579bd8f21fd8f" data-node="579bd8f21fd8f">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-579bd8f221fda" data-node="579bd8f221fda">
+			<div class="fl-col fl-node-579bd8f2220c6" data-node="579bd8f2220c6" style="width: 100%;">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-cta fl-node-579bd837eda32" data-node="579bd837eda32" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-cta-wrap fl-cta-inline">
+	<div class="fl-cta-text">
+		<h3 class="fl-cta-title">Next Steps...</h3>
+		<div class="fl-cta-text-content"><p>This is should be a prospective customer's number one call to action, e.g., requesting a quote or perusing your product catalog.</p>
+</div>
+	</div>
+	<div class="fl-cta-button">
+		<div class="fl-button-wrap fl-button-width-full">
+			<a href="" target="_self" class="fl-button" role="button">
+							<span class="fl-button-text">Call to Action</span>
+					</a>
+</div>
+	</div>
+</div>	</div>
+</div>	</div>
+</div>	</div>
+		</div>
+	</div>
+</div></div>
+</div><!-- .page-content -->
+
+	
+</article><!-- #post-## -->
+
+			
+		
+	</main><!-- #main -->
+
+</div><!-- #primary -->
+
+
+
+
+		</div><!-- #content -->
+
+		
+		<footer id="colophon" class="site-footer">
+
+			<div class="site-footer-inner">
+
+					<div class="footer-widget-area columns-2">
+
+	
+		<div class="footer-widget">
+
+			
+		</div>
+
+	
+		<div class="footer-widget">
+
+			<aside id="wpcw_contact-4" class="widget wpcw-widgets wpcw-widget-contact"><h4 class="widget-title">Contact Us</h4><ul><li class="has-label"><strong>Email</strong><br><div><a href="mailto:&#110;&#54;&#97;g&#119;zw&#49;&#103;&#57;&#56;&#117;&#64;&#110;3plcp&#110;&#108;0&#48;2&#50;.&#112;r&#111;d.&#97;ms3&#46;sec&#117;&#114;e&#115;&#101;rv&#101;&#114;.&#110;&#101;t">&#110;&#54;&#97;g&#119;zw&#49;&#103;&#57;&#56;&#117;&#64;&#110;3plcp&#110;&#108;0&#48;2&#50;.&#112;r&#111;d.&#97;ms3&#46;sec&#117;&#114;e&#115;&#101;rv&#101;&#114;.&#110;&#101;t</a></div></li><li class="has-label"><strong>Phone</strong><br><div>+358504806666</div></li><li class="has-label"><strong>Fax</strong><br><div>+358504806666</div></li><li class="has-label"><strong>Address</strong><br><div>Teekkarinkatu</div></li><li class="has-map"><iframe src="" data-src="https://www.google.com/maps?q=Teekkarinkatu&output=embed&hl=en&z=14" frameborder="0" class="wpcw-widget-contact-map"></iframe></li></ul></aside>
+		</div>
+
+	
+	</div>
+	
+			</div><!-- .site-footer-inner -->
+
+		</footer><!-- #colophon -->
+
+		
+<div class="site-info-wrapper">
+
+	<div class="site-info">
+
+		<div class="site-info-inner">
+
+			
+<div class="site-info-text">
+
+	Copyright &copy; 2018 My blog-Good good study day day up &mdash; Stout WordPress theme by <a href="https://www.godaddy.com/" rel="author nofollow">GoDaddy</a>
+</div>
+
+		</div><!-- .site-info-inner -->
+
+	</div><!-- .site-info -->
+
+</div><!-- .site-info-wrapper -->
+
+	</div><!-- #page -->
+
+	<script type="text/javascript">
+
+if(typeof jQuery == 'undefined' || typeof jQuery.fn.on == 'undefined') {
+	document.write('<script src="http://xiaodian360.com/wp-content/plugins/beaver-builder-lite-version/js/jquery.js"><\/script>');
+	document.write('<script src="http://xiaodian360.com/wp-content/plugins/beaver-builder-lite-version/js/jquery.migrate.min.js"><\/script>');
+}
+
+</script>		<script type="text/javascript">
+			window.onload = ( function() {
+				var maps = document.getElementsByClassName( 'wpcw-widget-contact-map' );
+				for ( var i = 0; i < maps.length; i++ ) {
+					var src = maps[i].getAttribute( 'data-src' );
+					if ( src ) {
+						maps[i].setAttribute( 'src', src );
+						maps[i].removeAttribute( 'data-src' );
+					}
+				}
+			} );
+		</script>
+		<script type='text/javascript' src='http://xiaodian360.com/wp-content/uploads/bb-plugin/cache/156-layout.js?ver=411793990a010500dbaad5ddc8ed8900'></script>
+<script type='text/javascript' src='http://xiaodian360.com/wp-content/themes/stout/assets/js/stout-hero.min.js?ver=1.7.0'></script>
+<script type='text/javascript' src='http://xiaodian360.com/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.7.0'></script>
+<script type='text/javascript' src='http://xiaodian360.com/wp-content/themes/primer/assets/js/skip-link-focus-fix.min.js?ver=1.7.0'></script>
+<script type='text/javascript' src='http://xiaodian360.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+
+</body>
+
+</html>
