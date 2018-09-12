@@ -18,7 +18,7 @@ class Person(object):
         return self.name
 
     def get_grade(self):
-        pass
+        print("person")
 
 class Student(Person):
     """
@@ -37,7 +37,24 @@ class Student(Person):
         return "{} studies {} and is in {} year.".format(self.name, self.branch, self.year)
 
     def get_grade(self,grade):
-        print(grade)
+
+        print(len(grade),grade)
+        c=Counter(grade)
+        list=c.most_common(4)
+        print(type(list))
+        print(list)
+        list_len=len(list)
+        num_pass,num_fail=0,0
+        for i,pari in enumerate(list):
+            if pari[0] in ['A','B','C']:
+                num_pass+=pari[1]
+            else:
+                num_fail+=pari[1]
+        print("pass: {},fail: {}".format(num_pass,num_fail))
+
+
+
+
 
 class Teacher(Person):
     """
@@ -50,8 +67,16 @@ class Teacher(Person):
     def get_details(self):
         return "{} teaches {}".format(self.name, ','.join(self.papers))
 
-    def get_grade(self):
-        pass
+    def get_grade(self,grade):
+        c=Counter(grade)
+        list=c.most_common(4)
+        list_len=len(list)
+        for i,pari in enumerate(list):
+            if i != list_len-1:
+                print("{}: {}, ".format(pari[0],pari[1]),end='')
+            else:
+                print("{}: {}".format(pari[0], pari[1]))
+
 
 if __name__=='__main__':
 
@@ -62,9 +87,16 @@ if __name__=='__main__':
     # print(person1.get_details())
     # print(student1.get_details())
     # print(teacher1.get_details())
-
-    if len(sys.argv)<1:
+    #ABCCBADDAA
+    #print(sys.argv)
+    if len(sys.argv)<4:
         print("check command")
         exit(-1)
-    print(sys.argv[1])
-    print(student1.get_grade(sys.argv[1]))
+    role=sys.argv[3].lower()
+    grade=sys.argv[4].upper()
+    #print(role,grade)
+
+    if  role== 'teacher':
+        teacher1.get_grade(grade)
+    elif role == 'student':
+        student1.get_grade(grade)
