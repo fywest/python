@@ -6,7 +6,7 @@ import json
 
 import getopt
 from configparser import ConfigParser
-import datetime
+from datetime import datetime
 
 class Args(object):
     def __init__(self,args):
@@ -49,6 +49,13 @@ class Config(object):
         config_dict={}
         config = ConfigParser()
         config.read(configfile,encoding='UTF-8')
+        cityname=cityname.upper()
+        city_origin_name=cityname
+        if cityname not in config.sections():
+            cityname='DEFAULT'
+            print("{} is not exist in config file and use default value".format(city_origin_name))
+        
+        print("cityname is : {}".format(cityname))
         list_config=config.items(cityname)
         for item in list_config:
             config_dict[item[0].strip()]=float(item[1].strip())
@@ -103,9 +110,13 @@ class IncomeTaxCalculator(object):
             salary_after_tax=salary-insure-tax
             line.append(user_id)
             line.append(salary)
-            line.append(insure)
-            line.append(tax)
-            line.append(salary_after_tax)
+            line.append("%.2f"%insure)
+            line.append("%.2f"%tax)
+            line.append("%.2f"%salary_after_tax)
+
+            dt=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            line.append(dt)
+
             output_list.append(line)
         return output_list
 
