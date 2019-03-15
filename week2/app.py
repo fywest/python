@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import url_for
 from flask import redirect
+from flask import request
 
 app = Flask(__name__)
 
@@ -10,6 +11,10 @@ def index():
 
 @app.route('/user/<username>')
 def user_index(username):
+    print('User-Agent:', request.headers.get('User-Agent'))
+    print('time:', request.args.get('time'))
+    print('q:', request.args.get('q'))
+    print('Q:', request.args.getlist('Q'))
     return 'Hello {}'.format(username)
 
 @app.route('/post/<int:post_id>')
@@ -38,7 +43,14 @@ def hello(username):
     else:
         return redirect(url_for('index'))
 
-
+@app.route('/register',methods=['GET','POST'])
+def register():
+    print('method:',request.method)
+    print('name:', request.form['name'])
+    print('password:', request.form.get('password'))
+    print('hobbies:', request.form.getlist('hobbies'))
+    print('age', request.form.get('age',default=18))
+    return 'register successed!'
 
 if __name__=='__main__':
     app.run()

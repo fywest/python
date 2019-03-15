@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import url_for
 from flask import redirect
-
+from flask import request
 app=Flask(__name__)
 @app.route('/')
 def index():
@@ -16,6 +16,19 @@ def show_course(course_name):
 def test():
     print(url_for('show_course',course_name='java',_external=True))
     return redirect(url_for('index'))
+
+@app.route('/httptest',methods=['GET','POST'])
+def httptest():
+    print('method:', request.method)
+    if request.method=='POST':
+        print('Q: ',request.form.getlist('Q'))
+        return 'It is a post request!'
+    elif request.method=='GET':
+        print('t: ', request.args.get('t'))
+        print('q: ',request.args.get('q'))
+        return 'It is a get request!'
+    else:
+        return 'somethong wrong'
 
 if __name__=='__main__':
     app.run()
