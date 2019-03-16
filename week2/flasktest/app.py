@@ -1,11 +1,22 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask import url_for
 from flask import redirect
 from flask import request
+
 app=Flask(__name__)
+
 @app.route('/')
 def index():
-    return 'hello world'
+    course= {
+        'python':'lou+ python',
+        'java':'java base',
+        'bigdata':'spark sql',
+        'teacher':'shixiaolou',
+        'is_unique':False,
+        'has_tag':False,
+        'tags':['c','c++','docker'],
+    }
+    return render_template('index.html',course=course)#'hello world'
 
 @app.route('/courses/<course_name>')
 def show_course(course_name):

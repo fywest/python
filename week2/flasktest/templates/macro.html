@@ -1,0 +1,35 @@
+{% macro course_item(course) %}
+    <div>
+
+        <p> python: {{course.python}} </p>
+        <p> java: {{course.java}} </p>
+        <p> bigdata: {{course.bigdata}} </p>
+        <p> teacher: {{course.teacher}} </p>
+        <p> is_unique: {{course.is_unique}} </p>
+        <p> has_tag: {{course.has_tag}} </p>
+        <p> tags: {{course.tags}} </p>
+
+        {{ '*'*20 }}
+        <br></br>
+        {% if course.is_unique %}
+        <p>course is unique</p>
+        {% else %}
+            {% if not course.tags %}
+                <p>course is not unique and it don\'t has tag.</p>
+            {% endif %}    
+        {% endif %}
+
+    {% for tag in  course.tags %}
+        <span> {{ tag }} </span>
+    {% endfor %}
+
+    {% if course.has_tag %}
+    {% else %}
+        {% if course.has_tag %}
+        {% else %}
+            <p>course is not unique and it don\'t has tag.</p>
+        {% endif %}    
+    {% endif %}    
+
+    </div>
+{% endmacro %}
