@@ -1,2 +1,16 @@
+{% extends "base.html" %}
 {% from 'macro.html' import course_item %}
-<div> {{ course_item(course) }} </div>
+
+{% block header%}
+    <h1> header </h1>
+{% endblock %}
+
+{% block content %}
+    {{ course_item(course) }}
+{% endblock %}
+
+{% block footer %}
+    <p> this is footer </p>
+    <a href = {{ url_for ('show_course', course_name='python') }} > courses </a>
+{% endblock %}
+

@@ -1,0 +1,20 @@
+<body>
+    <div>
+        {% block header  %}
+        <p> this is header </p>
+        {% endblock  %}
+    </div>
+
+    <div>
+        {% block content %}
+        <p> content </p>
+        {% endblock %}
+    </div>
+    <p> hello world </p>
+    <div id="footer">
+        {% block footer  %}
+        &copy;Copyright 2017 by<a href="http://www.shiyanlou.com/"> shiyanlou </a>
+        {% endblock  %}
+    </div>
+
+</body>
