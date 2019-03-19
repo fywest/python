@@ -1,0 +1,30 @@
+{% macro book_item(books) %}
+<!--
+    <div>
+    </div>
+-->
+{% for book in books %}
+    <p> book file: {{book}} </p>
+    <p> book title: {{books[book].title}} </p>
+    <p> book created_time: {{books[book].created_time}} </p>
+    <p> book content: {{books[book].content}} </p>
+    
+{% endfor %}
+
+{% endmacro %}
+
+{% macro book_title(titles) %}
+
+{% for title in titles %}
+    <p> book title: {{title}} </p>
+{% endfor %}
+
+{% endmacro %}
+
+{% macro book_content(book) %}
+
+    <p> book content: {{book}} </p>
+    
+
+{% endmacro %}
+

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% from "file.html" import book_item %}
+
+{% block book %}
+    {{ book_item(books) }}
+{% endblock %}
+
+
+{% from "file.html" import book_title %}
+{% block title %}
+    {{ book_title(titles) }}
+{% endblock %}
+
+
+{% from "file.html" import book_content %}
+{% block content %}
+    {{ book_content(book) }}
+{% endblock %}
+
+
