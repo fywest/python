@@ -23,13 +23,15 @@ def get_titles():
     for filename,book in books.items():
         titles.append(book['title'])
 
-book=''
+content=''
 def get_content(filename):
     get_books()
     for name,book in books.items():
         print(name,filename)
-        if filename==name:
-            return book['content']
+        if filename==name[:-5]:
+            global content
+            content = book['content']
+            return True
 
 @app.route('/')
 def index():
@@ -45,9 +47,12 @@ def index_title():
 @app.route('/files/<filename>')
 def file(filename):
     get_books()
-    book=get_content(filename)
-    print(book)
-    return render_template('index.html',book=book)
+    if(get_content(filename)):
+        print(content)
+        return render_template('index.html',content=content)
+    else:
+        print('404')
+        return render_template('404.html'),404
 
 if __name__=='__main__':
     get_books()
@@ -56,6 +61,8 @@ if __name__=='__main__':
     print('*'*20)
     get_titles()
     print(titles)
-    book=get_content('helloworld.json')
-    print(book)
+    if(get_content('helloworld')):
+        print('content: '+content)
+    else:
+        print("notfound")
     app.run()
