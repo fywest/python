@@ -26,11 +26,28 @@ class Files(object):
 
 files = Files()
 
+@app.route('/')
+def index():
+    return render_template('index.html',title_list=files.get_title_list())
+
+@app.route('/files/<filename>')
+def file(filename):
+    file_item=files.get_by_filename(filename)
+    if not file_item:
+        abort(404)
+    return render_template('file.html',file_item=file_item)
+
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html'),404
+
 if __name__=='__main__':
+    print(os.path.abspath(os.path.join(os.path.dirname(__file__),'..','file')))
     print(files._files)
     print('*'*20)
     print(files.get_title_list())
     print('*'*20)
     print(files.get_by_filename('helloshiyanlou'))
+    print('*'*20)
     print(files.get_by_filename('helloworld'))
-
+    app.run()
