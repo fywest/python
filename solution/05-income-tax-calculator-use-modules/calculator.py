@@ -2,9 +2,15 @@ import sys
 import csv
 from collections import namedtuple
 
+from configparser
+from getopt import getopt, GetoptError
+from datetime import datetime
+import queque
+from multiprocessing import Queus, Process
+
 IncomeTaxQuickLookupItem = namedtuple('IncomeTaxQuickLookupItem',['start_point','tax_rate','quick_subtractor'])
 
-INCOME_TAX_START_POINT = 3500
+INCOME_TAX_START_POINT = 5000
 
 INCOME_TAX_QUICK_LOOKUP_TABLE=[
 IncomeTaxQuickLookupItem(80000, 0.45, 13505),
@@ -18,7 +24,11 @@ IncomeTaxQuickLookupItem(0, 0.03, 0)
 
 class Args(object):
     def __init__(self):
-        self.args=sys.argv[1:]
+        self.options=self._options()
+
+    def _optoins(self):
+        try:
+        opts, _= getopt(sys.argv[1:], 'hC:c:d:o', ['help'])
 
     def _value_after_option(self,option):
         try:
