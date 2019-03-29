@@ -48,28 +48,81 @@ class Files(object):
         return [item['title'] for item in self._files.values()]
     def get_by_filename(self,filename):
         return self._files.get(filename)
+
 files = Files()
 
+class Files_mysql(object):
+    def __init__(self):
+        self._files=File.query.all()
+
+    def __repr__(self):
+        return self._files
+
+    def get_title_list(self):
+        title_list=[item.title for item in self._files]
+        return title_list
+
+    def get_id_list(self):
+        id_list=[item.id for item in self._files]
+        return id_list
+
+    def get_file_by_id(self,fileid):
+        file_dict={}
+        for item in self._files:
+            print(fileid,item.id)
+            print(type(fileid),type(item.id))
+            if int(fileid)==item.id:
+                print(item)
+                return item
+
+
+files_mysql=Files_mysql()
 @app.route('/')
 def index():
-    return render_template('index.html',title_list=files.get_title_list())
+    return render_template('index.html',title_list=files_mysql.files_mysql.get_title_list())
+# return render_template('index.html',title_list=files.get_title_list())
 
-@app.route('/files/<filename>')
-def file(filename):
-    file_item=files.get_by_filename(filename)
-    if not file_item:
+#mysql> select file.id, file.content, file.created_time, catetory.name from file, category where file.id=1 and category.id=file.category_id
+#db.session.query(File.id,File.content,Category.name).filter(File.id==1).filter(File.category_id==Category.id).all()
+    
+@app.route('/files/<fileid>')
+def file(fileid):
+    id_list=files_mysql.get_id_list()
+    if not id_list:
         abort(404)
+    file_item=files_mysql.get_file_by_id(fileid)
+    print(file_item)
     return render_template('file.html',file_item=file_item)
+#@app.route('/files/<filename>')
+#def file(filename):
+#file_item=files.get_by_filename(filename)
+#   if not file_item:
+#       abort(404)
+#    return render_template('file.html',file_item=file_item)
 
 @app.errorhandler(404)
 def not_found(error):
     return render_template('404.html'),404
 
 if __name__=='__main__':
-    #app.run()i
+    #app.run()
 
-    file_myql=File.query.all()
-    print(file_mysql)
+# file_mysql=File.query.all()
+#print(file_mysql)
+#for item in file_mysql:
+#       print(item.title)
+#    file_mysql_title_list=[item.title for item in sfile_mysql]
+    files_mysql=Files_mysql()
+    print(files_mysql.get_title_list())
+
+    print(files_mysql.get_id_list())
+    print(files_mysql.get_file_by_id(1))
+    file_item=files_mysql.get_file_by_id(1)
+    print(file_item.title)
+    print(file_item.created_time)
+    print(file_item.content)
+    
+    
     category_mysql = Category.query.all()
     print(category_mysql)
 
