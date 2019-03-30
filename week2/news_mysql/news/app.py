@@ -62,6 +62,10 @@ class Files_mysql(object):
         title_list=[item.title for item in self._files]
         return title_list
 
+    def get_file_list(self):
+        file_list=[item for item in self._files]
+        return file_list
+
     def get_id_list(self):
         id_list=[item.id for item in self._files]
         return id_list
@@ -75,12 +79,17 @@ class Files_mysql(object):
                 print(item)
                 return item
 
-
+    def get_file_category_by_fileid(self,fileid):
+        file_query_test=db.session.query(File.id,File.content,File.created_time,Category.name).filter(File.id==fileid).filter(File.category_id==Category.id).first()
+        print(file_query_test)
+        return file_query_test
+        
 files_mysql=Files_mysql()
+
 @app.route('/')
 def index():
-    return render_template('index.html',title_list=files_mysql.files_mysql.get_title_list())
-# return render_template('index.html',title_list=files.get_title_list())
+    return render_template('index.html',file_list=files_mysql.get_file_list())
+
 
 #mysql> select file.id, file.content, file.created_time, catetory.name from file, category where file.id=1 and category.id=file.category_id
 #db.session.query(File.id,File.content,Category.name).filter(File.id==1).filter(File.category_id==Category.id).all()
@@ -88,11 +97,15 @@ def index():
 @app.route('/files/<fileid>')
 def file(fileid):
     id_list=files_mysql.get_id_list()
-    if not id_list:
+    if int(fileid) not in id_list:
         abort(404)
-    file_item=files_mysql.get_file_by_id(fileid)
-    print(file_item)
-    return render_template('file.html',file_item=file_item)
+    file_item_1=files_mysql.get_file_by_id(fileid)
+    file_category_item=files_mysql.get_file_category_by_fileid(fileid)
+
+    print(file_item_1)
+    print(file_category_item)
+    return render_template('file.html',file_item=file_category_item)
+
 #@app.route('/files/<filename>')
 #def file(filename):
 #file_item=files.get_by_filename(filename)
@@ -107,11 +120,6 @@ def not_found(error):
 if __name__=='__main__':
     #app.run()
 
-# file_mysql=File.query.all()
-#print(file_mysql)
-#for item in file_mysql:
-#       print(item.title)
-#    file_mysql_title_list=[item.title for item in sfile_mysql]
     files_mysql=Files_mysql()
     print(files_mysql.get_title_list())
 
@@ -125,4 +133,8 @@ if __name__=='__main__':
     
     category_mysql = Category.query.all()
     print(category_mysql)
+
+    file_query_test=db.session.query(File.id,File.content,Category.name).filter(File.id==1).filter(File.category_id==Category.id).all()
+    print(file_query_test)
+    
 

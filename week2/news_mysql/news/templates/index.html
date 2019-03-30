@@ -5,8 +5,8 @@
 </head>
 <body>
 <ul>
-{% for title in title_list %}
-<li>{{ title }}</li>
+{% for file in file_list %}
+<li><a href={{url_for('file',fileid=file.id)}}>{{ file.title }}</a></li>
 {% endfor %}
 </ul>
 </body>
