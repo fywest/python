@@ -1,0 +1,47 @@
+<html>
+    <head></head>
+
+    <body>
+    <script>
+    for(var i=0;i<8;i++){
+        document.write("number is "+i+"<br>");
+    }
+    
+    for(i=1;i<10;i++){
+        if(i==5 || i==6) continue;
+        if(i==8) break;
+        document.write(i);
+    }
+    document.write("<br>");
+    
+    let add= function(x,y){
+        return x+y;
+    }
+    document.write(add(22,5));
+    document.write("<br>");
+
+    var myObject = {
+        'value':0,
+        'increment': function(count){
+            this.value += typeof count ==='number' ? count : 1;
+        }
+    }
+    myObject.increment();
+    document.write(myObject.value);
+    document.write("<br>");
+    myObject.increment(2);
+    document.write(myObject.value);
+    
+    class Dog1 {
+        constructor(name) {
+            this.name = name
+        }
+        bark() {
+            console.log('wang wang wang')
+        }
+    }
+    dog = new Dog1('wangcai');
+    dog.bark();
+    </script>
+    </body>
+</html>
