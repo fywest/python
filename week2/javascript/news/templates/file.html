@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset='UTF-8'>
+{% block title%}
 <title>file</title>
-</head>
-<body>
+{% endblock%}
+
+{% block content%}
 <h1>{{ file_item['title']}}</h1>
 <p>{{ file_item['created_time']}}</p>
 <p>{{ file_item['content']}}</p>
-</body>
-</html>
+{% endblock%}
+
 
