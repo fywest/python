@@ -7,9 +7,6 @@ client = MongoClient()
 db = client.shiyanlou
 contests = db.contests
 records = db.contests.find()
-#if records is None:
-#    return "NOTFOUND"
-
 def get_rank(user_id):
     rank=0
     score=0
@@ -17,40 +14,36 @@ def get_rank(user_id):
     users_list=[]
     users_set = set()
     for record in db.contests.find():
-        print(record)
         dict_tmp={}
-        list_tmp=[]
         id_tmp=record['user_id']
         rank=record['challenge_id']
         score=record['score']
         time=record['submit_time']
 
         if id_tmp in users_set:
-            print('---------------')
             for item in users_list:
                 if item['id']==id_tmp:
-                    print(item)
-                    item['value'][1]+=rank
-                    item['value'][2]+=score
-                    item['value'][3]+=time
-                    print(item)
+                    item['score']+=score
+                    item['submit_time']+=time
                     break
             
         else:
-            print('*********')
-            list_tmp.append(id_tmp)
-            list_tmp.append(rank)
-            list_tmp.append(score)
-            list_tmp.append(time)
             dict_tmp['id']=id_tmp
-            dict_tmp['value']=list_tmp
-            print(dict_tmp)
+            dict_tmp['score']=score
+            dict_tmp['submit_time']=time
             users_set.add(id_tmp)
             users_list.append(dict_tmp)
-        print(users_set)
 
+    newlist=sorted(users_list,key=lambda k:(-k['score'],k['submit_time']))
+    rank, score, submit_time=0,0,0
+    for index,item in enumerate(newlist):
+        item['rank']=index+1    
+        if item['id']==user_id:
+            rank=item['rank']
+            score=item['score']
+            submit_time=item['submit_time']
 
-    return users_list#rank, score, submit_time
+    return rank, score, submit_time
 
 
 if __name__ == '__main__':
@@ -62,5 +55,9 @@ if __name__ == '__main__':
     except ValueError:
         print("Parameter Error")
         exit(2)
-    userdata = get_rank(user_id)
-    print(userdata)
+
+    if db.contests.find_one({'user_id':user_id})==None:
+        print("NOTFOUND")
+    else:
+        userdata = get_rank(user_id)
+        print(userdata)
