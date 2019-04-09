@@ -1,0 +1,8 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import socket
+
+client=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+client.connect(('localhost',6999))
+
