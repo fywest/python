@@ -1,0 +1,26 @@
+# coding: utf-8
+response
+response.body
+response.title
+response.head
+response.headers
+response.headers.get()
+response.headers.get
+response.xpath('//title')
+response.xpath('//title').get()
+reponse.xpath('//*[@id="user-repositories-list"]/ul/li[1]/div[1]/div[1]/h3/a')
+response.xpath('//*[@id="user-repositories-list"]/ul/li[1]/div[1]/div[1]/h3/a')
+response.xpath('//*[@id="user-repositories-list"]/ul/li[1]/div[1]/div[1]/h3/a/text()')
+response.xpath('//*[@id="user-repositories-list"]/ul/li[1]/div[1]/div[1]/h3/a/text()').extract_first()
+response.xpath('//*[@id="user-repositories-list"]/ul/li[1]/div[1]/div[1]/h3/a/text()').extract()
+response.xpath('//*[@id="user-repositories-list"]/ul/li[1]/div/div/h3/a/text()').extract()
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()').extract()
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()').extract().re(.+)
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()').re(.+)
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()')
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()').get
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()')
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/text()')
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()')
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()').extract()
+response.xpath('//*[@id="user-repositories-list"]/ul/li/div/div/h3/a/text()').re('[a-z]+\-?[a-z]+')

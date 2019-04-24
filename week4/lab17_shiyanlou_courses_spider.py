@@ -6,8 +6,8 @@ class ShiyanlouCoursesSpider(scrapy.Spider):
     name = 'shiyanlou-courses'
 
     def start_requests(self):
-        url_tmpl = 'https://www.shiyanlou.com/courses/?category=all&course_type&fee=all&tag=all&page={}'
-        urls = (url_tmpl.format(i) for i in range(1,23))
+        url_tmpl = 'https://github.com/shiyanlou?tab=repositories&page={}'
+        urls = (url_tmpl.format(i) for i in range(1,5))
 
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
