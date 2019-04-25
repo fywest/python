@@ -3,13 +3,14 @@ import  scrapy
 
 class ShiyanlouCoursesSpider(scrapy.Spider):
 
-    name = 'shiyanlou-courses'
+    name = 'shiyanlou-github'
 
     def start_requests(self):
         url_tmpl = 'https://github.com/shiyanlou?tab=repositories&page={}'
-        urls = (url_tmpl.format(i) for i in range(1,5))
-
+#urls = (url_tmpl.format(i) for i in range(1,5))
+        urls = ['https://github.com/shiyanlou?tab=repositories',]
         for url in urls:
+            print(url)
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
