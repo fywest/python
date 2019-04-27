@@ -13,7 +13,9 @@ class ShiyanlouCoursesSpider(scrapy.Spider):
 
         for course in response.xpath('//*[@id="user-repositories-list"]/ul/li'):
             yield{
-                'name': course.xpath('.//h3/a/text()').re('[a-z]+\-?[a-z]+'),
+#'name': course.xpath('.//h3/a/text()').re('[a-z]+\-?[a-z]+'),
+#'name': course.xpath('.//h3/a/text()').extract(),
+                'name': course.css('a::text').get(),
             }
 
 
