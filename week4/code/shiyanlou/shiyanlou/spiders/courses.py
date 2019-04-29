@@ -1,9 +1,10 @@
 # -*- coding:utf-8 -*-
 import  scrapy
+from shiyanlou.items import CourseItem
 
 class ShiyanlouCoursesSpider(scrapy.Spider):
 
-    name = 'shiyanlou-courses'
+    name = 'courses'
 
     def start_requests(self):
         url_tmpl = 'https://github.com/shiyanlou?tab=repositories'
@@ -24,10 +25,11 @@ class ShiyanlouCoursesSpider(scrapy.Spider):
         print(response.url)
         print("*******************************************************")
         for course in response.xpath('//*[@id="__layout"]/div/div[1]/div/div[1]/div/          div[1]/div/div[2]/div[1]/div'):
-            yield{
+            item = CourseItem({
                 'name': course.xpath('.//h6[contains(@class,"course-name")]/text()').extract_first(),
                 'description': course.xpath('.//div[contains(@class,"course-desc")]/text()').extract_first(),
                 'type': course.xpath('.//span[contains(@class,"course-type")]/text()').extract_first(default='Free'),
-                'student': course.xpath('.//span[contains(@class,"students-count")]/span/text()').extract_first(),
-            }
+                'students': course.xpath('.//span[contains(@class,"students-count")]/span/text()').extract_first(),
+            })
+            yield item
 
