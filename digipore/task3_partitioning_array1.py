@@ -13,7 +13,7 @@ if __name__=='__main__':
     num=0 
     a1=0
     a2=0
-    for item in itertools.permutations(b,len(b)):
+    for item in itertools.permutations(a,len(a)):
         print(item)
         num+=1
         count=0
