@@ -6,13 +6,23 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 from sqlalchemy.orm import sessionmaker
-from shiyanlou.models import Course, engine
+from shiyanlou.models import Course, engine, User
 from scrapy.exceptions import DropItem
+
+from shiyanlou.items import CourseItem, UserItem 
+from datetime import datetime
 
 class ShiyanlouPipeline(object):
 
     def process_item(self, item, spider):
+        if isinstance(item, CourseItem):
+            self._process_course_item(item)
+        else:
+            self._process_user_item(item)
         
+        return item
+    
+    def _process_course_item(self, item):
         item['students'] = int(item['students'])
         item['name'] = str(item['name']).strip()
         item['description'] = str(item['description']).strip()
@@ -22,6 +32,14 @@ class ShiyanlouPipeline(object):
         else:   
             self.session.add(Course(**item))
         return item
+
+    def _process_user_item(self, item):
+        item['name']=item['name']
+        item['join_date']=datetime.strptime(item['join_date'], '%Y-%m-%d').date()
+        item['learn_courses_num']=int(item['learn_courses_num'])
+
+        self.session.add(User(**item))
+
 
     def open_spider(self, spider):
         

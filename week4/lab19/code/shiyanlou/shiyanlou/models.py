@@ -19,11 +19,11 @@ class User(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String(64), index=True)
-    type = Column(String(64))
-    status = Column(String(64), index=True)
-    school = Column(String(64))
-    job = Column(String(64))
-    level = Column(Integer, index=True)
+#type = Column(String(64))
+#status = Column(String(64), index=True)
+#school = Column(String(64))
+#job = Column(String(64))
+#level = Column(Integer, index=True)
     join_date = Column(Date)
     learn_courses_num = Column(Integer)
 
