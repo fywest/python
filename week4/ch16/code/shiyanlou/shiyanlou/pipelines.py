@@ -15,12 +15,12 @@ from datetime import datetime
 class ShiyanlouPipeline(object):
 
     def process_item(self, item, spider):
-        if isinstance(item, CourseItem):
-            self._process_course_item(item)
-        elif isinstance(item, UserItem):
-            self._process_user_item(item)
-        elif isinstance(item, RepositoryItem):
-            self._process_user_item(item)
+#if isinstance(item, CourseItem):
+#self._process_course_item(item)
+#elif isinstance(item, UserItem):
+#self._process_user_item(item)
+#elif isinstance(item, RepositoryItem):
+        self._process_repository_item(item)
         
         
         return item
@@ -45,9 +45,9 @@ class ShiyanlouPipeline(object):
 
     def _process_repository_item(self, item):
         item['name']=item['name']
-        item['update_date']=datetime.strptime(item['update_date'], '%Y-%m-%d').date()
+        item['update_time']=datetime.strptime(item['update_time'], '%Y-%m-%dT%H:%M:%SZ')
 
-        self.session.add(User(**item))
+        self.session.add(Repository(**item))
 
 
 

@@ -12,10 +12,10 @@ class ShiyanlouRepositorySpider(scrapy.Spider):
         self.logger.info("Parse function called on %s",response.url)
 
         for course in response.xpath('//*[@id="user-repositories-list"]/ul/li'):
-            yield{
+            yield RepositoryItem({
                 'name': course.xpath('.//h3/a/text()').re_first('[^\s]+'),
                 'update_time': course.xpath('.//relative-time/@datetime').extract_first(),
-            }
+            })
 
         next_name=response.xpath('//*[@id="user-repositories-list"]/div/div/a/text()').get()
         if next_name == 'Next':
