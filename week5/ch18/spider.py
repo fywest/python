@@ -6,6 +6,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+import time
+
 results = []
 
 def parse(response):
@@ -16,24 +18,21 @@ def parse(response):
         results.append(result)
 
 def has_next_page(response):
-    next_page=c=response.xpath('//div[@class="common-content"]//div[@class="base-pagination"]/nav/ul/li[2]').extract_first()
+    next_page=response.xpath('//div[@class="common-content"]//div[@class="base-pagination"]/nav/ul/li[2]').extract_first()
     return "disabled" not in next_page
 
 def goto_next_page(driver):
-# chrome_obj=webdriver.Chrome()
-# chrome_obj.get("https://www.shiyanlou.com/courses/427")
-# label=chrome_obj.find_element_by_xpath('//div[@class="common-content"]//div[@class="base-pagination"]/nav/ul/li[2]/a')
 
     label=driver.find_element_by_xpath('//div[@class="common-content"]//div[@class="base-pagination"]/nav/ul/li[2]/a')
-    label.click()
+    try:
+        label.click()
+    except: #ElementClickInterceptedException:
+        print("Element is not clickable at point (424, 3212)")
 
 def wait_page_return(driver,page):
-    WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '//ul[@class="pagination"]/li[2]/a')))
-
-#(By.XPATH, '//ul[@class="pagination"]/li[@class="page-item"]'),str(page)))
-
-                
+    time.sleep(10)
+    #WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//ul[@class="pagination"]/li[2]/a')))
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//ul[@class="pagination"]/li[2]/a')))
     
 def spider():
 
@@ -51,7 +50,7 @@ def spider():
 
         if not has_next_page(response):
             break
-
+        print("*********** page: ",str(page))
         page += 1
         goto_next_page(driver)
 
