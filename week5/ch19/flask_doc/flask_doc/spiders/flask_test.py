@@ -2,9 +2,9 @@
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
-from flask_doc.items import PageItem
+#from flask_doc.items import PageItem
 
-from scrapy.selector import Selector
+#from scrapy.selector import Selector
 
 
 class FlaskSpider(CrawlSpider):
@@ -23,11 +23,15 @@ class FlaskSpider(CrawlSpider):
         #item['name'] = response.xpath('//div[@id="name"]').get()
         #item['description'] = response.xpath('//div[@id="description"]').get()
         #return item
-        item = PageItem()
-        url=str(response.url)
-        content=str(response.body)
-        item['url']=url
-        item['content']=content
+        print('****************************: ',str(response.url))
+        text=response.xpath('//text()').extract()
+        sentence=','.join(word.strip() for word in text)
+        yield{
+            'name':str(response.xpath('//body//h1/text()').extract_first()),
+            'url':str(response.url),
+            'content':sentence
+            #'content':str(response.headers)
+        }
 
         
-        yield item
+        #yield item
