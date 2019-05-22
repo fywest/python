@@ -8,7 +8,7 @@ from scrapy.spiders import CrawlSpider, Rule
 
 
 class FlaskSpider(CrawlSpider):
-    name = 'flask'
+    name = 'flask_test'
     allowed_domains = ['flask.pocoo.org']
     #start_urls = ['http://flask.pocoo.org/']
     start_urls = ['http://flask.pocoo.org/docs/0.12']

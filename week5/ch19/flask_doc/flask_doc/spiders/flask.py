@@ -6,15 +6,14 @@ from flask_doc.items import PageItem
 
 from scrapy.selector import Selector
 
-
 class FlaskSpider(CrawlSpider):
     name = 'flask'
     allowed_domains = ['flask.pocoo.org']
     #start_urls = ['http://flask.pocoo.org/']
     start_urls = ['http://flask.pocoo.org/docs/0.12']
-
+    index=0
     rules = (
-        Rule(LinkExtractor(tags=('a',),attrs=('href',)), callback='parse_item', follow=True),
+        Rule(LinkExtractor(allow='http://flask.pocoo.org/docs/0.12/.*',tags=('a',),attrs=('href',)), callback='parse_item', follow=True),
     )
 
     def parse_item(self, response):
@@ -23,11 +22,13 @@ class FlaskSpider(CrawlSpider):
         #item['name'] = response.xpath('//div[@id="name"]').get()
         #item['description'] = response.xpath('//div[@id="description"]').get()
         #return item
+        self.index=self.index+1
+        print("********************* {}  ************************".format(self.index))
         item = PageItem()
         url=str(response.url)
-        content=str(response.body)
+        #content=str(response.body)
         item['url']=url
-        item['content']=content
+        item['content']=(' '.join(response.xpath('//text()').extract()))[0:250]
 
         
         yield item
